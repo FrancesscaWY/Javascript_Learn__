@@ -1,0 +1,29 @@
+  body{
+    user-select: none;
+  }
+h1{
+  text-align: center;
+}
+div{
+  text-align: center;
+}
+  #my_image{
+      position: absolute;
+      margin-top: 300px;
+      margin-left: 500px;
+  }
+  #emotion{
+      position: absolute;
+      margin-top: 200px;
+      margin-left: 500px;
+      width:150px;
+      height: 50px;
+      font-family: "BIZ UDGothic";
+      font-size: large;
+  }
+
+  #time{
+      height:100px;
+      width:200px;
+
+  }
