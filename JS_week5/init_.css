@@ -27,3 +27,9 @@ div{
       width:200px;
 
   }
+  #str{
+      height:400px;
+      width:300px;
+      font-family: "BIZ UDGothic";
+      font-size: large;
+  }
