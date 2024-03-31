@@ -33,3 +33,15 @@ div{
       font-family: "BIZ UDGothic";
       font-size: large;
   }
+  #model_list{
+      height:200px;
+      width:300px;
+      font-family: "BIZ UDGothic";
+      font-size: large;
+  }
+  #hello{
+      height:200px;
+      width:300px;
+      font-family: "BIZ UDGothic";
+      font-size: large;
+  }

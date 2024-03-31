@@ -16,3 +16,21 @@ function is_str(){
 // var pat_=new RegExp('is');
 // document.write(pat_.test(str_));
 }
+
+function str_model(){
+    let text=`HELLO CHINA!`;
+    document.getElementById("demo").innerHTML=text;
+}
+
+function model_li(){
+    let header="";
+    let tags=["YOU","ME","WE","I","HE","SHE"];
+
+    let html=`<h2>${header}</h2><ul>`;
+    for(const x of tags){
+        html+=`<li>${x}</li>`;
+    }
+    html+=`</ul>`;
+    document.getElementById("model_list").innerHTML=html;
+}
+

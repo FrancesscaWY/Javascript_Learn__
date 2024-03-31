@@ -16,6 +16,7 @@
 15>> str1.includes("str2"):布尔值，返回str1中是否出现str2.
 16>> str.lastIndexOf("string"); 返回某个指定的字符串值在字符串中最后一次出现的位置
 17>> === 绝对相等，类型和值均相等下
+     !== not absolutely equal to 
 18>> Regexp 修饰符
      i - 修饰符是用来执行不区分大小写的匹配。
      g - 修饰符是用于执行全文的搜索（而不是在找到第一个就停止查找,而是找到所有的匹配）。
@@ -35,3 +36,4 @@
 30>> str.toLocaleUpperCase() 根据本地主机的语言环境把字符串转换为大写
 31>> str.valueOf() 返回 String 对象的原始值
 32>> toString 返回一个字符串
+33>> String_Model use ` ` to include
