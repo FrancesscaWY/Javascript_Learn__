@@ -1,0 +1,13 @@
+1>> JS DATA TYPE
+// 1. Number NaN
+// 2. String
+// 3. Boolean
+// 4. function
+// 5. Object
+     1>Object
+     2>Array
+     3>Date
+// without ant value
+     1>Null (object)
+     2>Undefined
+

@@ -1,0 +1,24 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    /*#滚动条样式隐藏*/
+    /*scrollbar-width: none;*/
+    overflow: hidden;
+}
+div{
+    border: steelblue 1px solid;
+}
+
+#car{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    width: 100%;
+    height: 100%;
+}
