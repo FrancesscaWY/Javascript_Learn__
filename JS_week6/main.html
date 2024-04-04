@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>WEEK_SIX</title>
@@ -7,10 +7,10 @@
 </head>
 <body>
     <div >
-    <p id="constructor..">hello</p>
-        <button id="color" type="button" onclick="Car.change_color()">Change Color</button>
+<!--    <p id="constructor..">hello</p>-->
+        <button class="cars" type="button" onclick="Car.change_color()">Change Color</button>
     </div>
-    <div>2</div>
+    <div><button class="cars" type="button" onclick="Car.changeType()">CHANGE TYPE </button> </div>
     <div>3</div>
     <div>4</div>
     <div>5</div>
@@ -24,10 +24,14 @@
     <div>13</div>
     <div>14</div>
     <div>15</div>
-    <div id="car">
-        <video autoplay loop width=100% height=100%>
+    <div id="cars">
+        <div></div>
+        <div id="car">
+        <video autoplay loop muted width="100%" height="100%">
             <source src="src/video/car1.mp4" type="video/mp4">
         </video>
+        </div>
+
         </div>
 </body>
     <script src="data_type.js"></script>

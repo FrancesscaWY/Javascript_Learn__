@@ -14,11 +14,45 @@ div{
     border: steelblue 1px solid;
 }
 
-#car{
+#cars{
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 6;
     width: 100%;
     height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr ;
+    grid-template-rows: 1fr;
+    /*position: relative;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*top:0;*/
+    /*left:0;*/
+    /*z-index: -9999;*/
+    /*align-items: center;//垂直居中*/
+    /*justify-content:left ;//水平居中*/
+}
+#car{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    height: 100%;
+    /*text-align: center;*/
+    align-items: center;
+    justify-content: center;
+}
+#car video{
+    width: 100%;
+    height: 100%;
+    object-fit: contain ;//视频填充整个div
+}
+.cars{
+    height: 100%;
+    width: 100%;
+    font-size: 3.5rem;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
 }
