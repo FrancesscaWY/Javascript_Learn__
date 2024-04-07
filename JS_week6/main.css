@@ -1,19 +1,32 @@
 body{
+    background-color: black;
+    color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 3.5fr;
     place-items: center;
-    height: 100vh;
-    margin: 0;
+    height: 100vh;//视口高度
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     /*#滚动条样式隐藏*/
     /*scrollbar-width: none;*/
     overflow: hidden;
+    width: 100%;
+    user-select: none;
 }
 div{
-    border: steelblue 1px solid;
+    margin: 0 10px 0 10px ;
+    /*border: steelblue 1px solid;*/
 }
-
+button{
+     border:ridge 5px white;
+    border-radius: 25px;
+    background-color:inherit;
+    color: white;
+    font-size: 1rem;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    cursor: pointer;
+    margin: 10px 15px 10px 15px;
+}
 #cars{
     grid-column-start: 1;
     grid-column-end: 6;
@@ -33,7 +46,16 @@ div{
     /*align-items: center;//垂直居中*/
     /*justify-content:left ;//水平居中*/
 }
-#car{
+#car_color{
+    /*grid-column-start: 1;*/
+    /*grid-column-end: 2;*/
+    /*grid-row-start: 1;*/
+    /*grid-row-end: 2;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*text-align:
+}
+#car_type{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -41,18 +63,61 @@ div{
     width: 100%;
     height: 100%;
     /*text-align: center;*/
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;*/
+    /*justify-content: center;*/
 }
-#car video{
-    width: 100%;
-    height: 100%;
-    object-fit: contain ;//视频填充整个div
+#car_color{
+    border: none;
+    margin-top: 0;
+    font-size: 50px;
+    font-family: "Arial Narrow", sans-serif;
+    text-align: center;
+    transition: 5s;
+    border: none;
+    margin-top: 0;
+    /*background-color: steelblue;*/
+}
+#car_color video{
+    /*margin-top: 0;*/
+    /*margin-left: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    width:690px;
+    height: 531px;
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+    border:none;
+    /*object-fit: inherit;//视频适应大小*/
+}
+#car_type{
+    border: none;
+    margin-top: 0;
+    font-size: 50px;
+    font-family: "Arial Narrow", sans-serif;
+    text-align: center;
+    transition: all 5s;
+    /*background-color: darkgray;*/
+}
+
+#car_type img{
+    /*box-shadow: black 0 0 10px;*/
+    box-shadow: black 0 0 10px;
 }
 .cars{
     height: 100%;
     width: 100%;
     font-size: 3.5rem;
     font-family: "Comic Sans MS", cursive, sans-serif;
+}
 
+#place{
+    /*#引入背景图片*/
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/picture/evil.svg");
+    background-size: auto;
+    /*#不重复背景图片*/
+    background-repeat: no-repeat;
+    /*background-image: evil.svg;*/
 }

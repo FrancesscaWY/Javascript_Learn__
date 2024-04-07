@@ -10,4 +10,21 @@
 // without ant value
      1>Null (object)
      2>Undefined
+6./"Symbol"/i(g/m
+    i:不区分大小写
+    g:全局匹配
+    m:多行匹配
+7."use strict" 严格模式
+   1>>不允许使用未声明的变量
+    2>>不允许删除变量或函数
+    3>>不允许删除不可删除的属性
+    4>>不允许适用八进制
+    5>>不允许对只读属性赋值
+    6>>arguments不允许赋值
+    7>>变量名不能使用保留字
+    8>>eval不会创建变量
+8.字符串断行需要使用反斜杠(\)
+question:
+1.Why a picture can not be stored in different div?
+
 
