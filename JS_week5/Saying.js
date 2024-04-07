@@ -1,7 +1,8 @@
 function SAY_GOOD() {
-    var d = Date();
+    var d = new Date();
     var time = d.getHours();
     var x;
+
     // document.getElementById("hello").innerHTML="HELLO!";
     if (time < 10) {
         x="GOOD MORNING!";
