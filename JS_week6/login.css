@@ -1,6 +1,10 @@
 body{
     overflow: hidden;
 }
+@font-face{
+    font-family: 'myFont1';
+    src:url('src/font_style/Sophia Script Free Demo.otf') format('opentype');
+}
 #main{
     height: 100vh;
     width: 100vw;
@@ -31,8 +35,8 @@ h1{
 }
 
 form{
-    font-family: "BIZ UDGothic" , "Yu Gothic" , "Meiryo" , sans-serif;
-    font-size: 50px;
+    font-family: "Cantarell", cursive, sans-serif;
+    font-size: 45px;
     margin: 50px 20px 20px 20px;
 }
 input{
@@ -50,9 +54,16 @@ input{
 select {
     font-size: 20px;
     margin: 40px 30px 30px 20px;
+    height: 50px;
+}
+
+select option{
+    background: burlywood;
+    height: 50px;
+    line-height: 3px;
 }
 
 span{
-    font-size: 20px;
-    font-family: "Arial Narrow";
+    font-size: 25px;
+    font-family: cursive;
 }

@@ -28,7 +28,7 @@ button{
     margin: 10px 15px 10px 15px;
 }
 #cars{
-    grid-column-start: 1;
+     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 6;

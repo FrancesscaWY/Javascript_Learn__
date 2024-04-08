@@ -11,7 +11,8 @@ function allowDrop(event){
 
 function drop(event){
     event.preventDefault();
-    var data=event.dataTransfer.getData("Text");
+    let data=event.dataTransfer.getData("Text");
     event.target.appendChild(document.getElementById(data));
     document.getElementById("heart").innerText="HEART IS HERE!";
 }
+

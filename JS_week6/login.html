@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="login.css">
     <script src="login_.js"></script>
 </head>
-<body>
+
+<body onload="ymd()">
 <div id="main">
     <div class="box"></div>
     <div class="box"><h1>HELLO WELCOME TO REGISTER !</h1></div>
@@ -25,14 +26,9 @@
             </label>
                 <br>
                 AGE:<label>
-                <select id="year">
-                </select><span>YEAR</span>
-                <select id="month">
-
-                </select><span>MONTH</span>
-                <select id="day">
-
-                </select><span>DAY</span>
+                <select id="year" name="yyy" onchange="selectYmd()"> </select><span>YEAR</span>
+                <select id="month" name="mmm" onchange="selectYmd()"></select><span>MONTH</span>
+                <select id="day" name="ddd"></select><span>DAY</span>
             </label>
                 <br>
 
