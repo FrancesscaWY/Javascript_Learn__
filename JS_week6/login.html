@@ -44,8 +44,9 @@
         <div class="login">
 <!--            <form action="login.php" name="L_form">-->
                 <h3>Profile_Picture</h3>
-                <img class="user_avatar" src="src/picture/PROFILE_PICTURE_L.svg">
-                <input type="file" name="f_picture" accept="image/*" id="logo_img" class="logo_img_add" value="upload">
+                <img class="user_avatar" src="src/picture/PROFILE_PICTURE_L.svg" id="img_">
+                <input type="file" name="f_picture" accept="image/*" id="logo_img" class="logo_img_add" value="upload" style="display: none" onchange="changeAgentContent()"/>
+                <input type="button" onclick="document.getElementById('logo_img').click()" value="UPLOAD"/>
 <!--                <input type="submit" value="UPLOAD">-->
 <!--            </form>-->
         </div>

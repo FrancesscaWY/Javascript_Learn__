@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test_button_E</title>
+    <style type="text/css">
+        label{
+            position: relative;
+        }
+        #btn{
+            margin-right: 5px;
+        }
+        #uploadFile{
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+        #uploadFile :hover{
+            cursor: hand;
+        }
+    </style>
+
+</head>
+<body>
+<label for="uploadFile">
+    <input type="button" id="btn" value="upload file"><span id="text">No files are selected</span>
+    <input type="file" name="file" accept="image/*" id="uploadFile" title="upload file"/>
+    <!- title : 设置移入按钮时，显示的名称 ->
+</label>
+<input type="file" id="inputFile" name="inputFile" style="display:none" onchange="changeAgentContent()" />
+<!--<input type="text" value="" disabled id="inputFileAgent" />-->
+<input type="button" onclick="document.getElementById('inputFile').click()" value="Browse..." />
+<script type="text/javascript">
+    function changeAgentContent(){
+        document.getElementById("inputFileAgent").value = document.getElementById("inputFile").value;
+    }
+</script>
+<script>
+    $( 'body' ).delegate( '#uploadFile', 'change', function( e ){
+        var val = $(this).val();
+        if ( val !== '' ) {
+            var fileName = val.substring( val.lastIndexOf( '\\' ) + 1 );//不获取全路径，只获取文件名称
+            console.log(fileName)
+            $("#text").html(fileName);
+        }else {
+            console.log("未选中任何文件");
+        }} );
+</script>
+</body>
+</html>

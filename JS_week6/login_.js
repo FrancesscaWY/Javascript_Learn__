@@ -111,6 +111,8 @@ function    selectYmd(){
     initSelect(ddd,1,dayEnd);
 }
 
-
+function changeAgentContent(){
+   document.getElementById("img_").value=document.getElementById("logo_img").value;
+}
 
 
