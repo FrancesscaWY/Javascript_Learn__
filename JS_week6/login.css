@@ -29,7 +29,7 @@ h1{
 }
 #login_{
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 4fr 2fr;
     width:100%;
     /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
 }
@@ -52,18 +52,25 @@ input{
 }
 
 select {
+
     font-size: 20px;
     margin: 40px 30px 30px 20px;
     height: 50px;
 }
 
 select option{
-    background: burlywood;
-    height: 50px;
+    background: steelblue;
+    height: 30px;
     line-height: 3px;
 }
 
 span{
     font-size: 25px;
     font-family: cursive;
+}
+
+.user_avatar{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
 }

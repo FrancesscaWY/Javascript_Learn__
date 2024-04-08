@@ -5,6 +5,7 @@
     <title>login_table</title>
     <link rel="stylesheet" href="login.css">
     <script src="login_.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js "></script>
 </head>
 
 <body onload="ymd()">
@@ -14,7 +15,7 @@
     <div class="box"></div>
     <div class="box"></div>
     <div class="box" id="login_">
-        <div class="login"></div>
+<!--        <div class="login"></div>-->
         <div id="register" class="login">
             <form action="login.php" name="L_form">
                 USER_NAME:<label>
@@ -26,12 +27,11 @@
             </label>
                 <br>
                 AGE:<label>
-                <select id="year" name="yyy" onchange="selectYmd()"> </select><span>YEAR</span>
-                <select id="month" name="mmm" onchange="selectYmd()"></select><span>MONTH</span>
-                <select id="day" name="ddd"></select><span>DAY</span>
+                <select id="year" name="yyy" onchange="selectYmd()" size="1"> </select><span>YEAR</span>
+                <select id="month" name="mmm" onchange="selectYmd()" size="1"></select><span>MONTH</span>
+                <select id="day" name="ddd" size="1"></select><span>DAY</span>
             </label>
                 <br>
-
                 E_MAIL:<label>
                 <input type="email" name="f_email" required="required">
             </label>
@@ -41,13 +41,20 @@
             </label>
             </form>
         </div>
-        <div class="login"></div>
+        <div class="login">
+<!--            <form action="login.php" name="L_form">-->
+                <h3>Profile_Picture</h3>
+                <img class="user_avatar" src="src/picture/PROFILE_PICTURE_L.svg">
+                <input type="file" name="f_picture" accept="image/*" id="logo_img" class="logo_img_add" value="upload">
+<!--                <input type="submit" value="UPLOAD">-->
+<!--            </form>-->
+        </div>
     </div>
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
 </div>
-
+<script src="upload_img.js"></script>
 </body>
 </html>
