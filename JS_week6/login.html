@@ -46,9 +46,12 @@
                 <h3>Profile_Picture</h3>
                 <img class="user_avatar" src="src/picture/PROFILE_PICTURE_L.svg" id="img_">
                 <input type="file" name="f_picture" accept="image/*" id="logo_img" class="logo_img_add" value="upload" style="display: none" onchange="changeAgentContent()"/>
-                <input type="button" onclick="document.getElementById('logo_img').click()" value="UPLOAD"/>
+            <table id="upload">
+               <tr> <td><input type="button" id="up_b" onclick="document.getElementById('logo_img').click()" value="UPLOAD"/></td>
 <!--                <input type="submit" value="UPLOAD">-->
 <!--            </form>-->
+                <td><img src="/src/picture/camrea2.svg" id="ro"></td></tr>
+            </table>
         </div>
     </div>
     <div class="box"></div>
@@ -57,5 +60,6 @@
     <div class="box"></div>
 </div>
 <script src="upload_img.js"></script>
+<script src="rotate_img.js"></script>
 </body>
 </html>

@@ -94,6 +94,29 @@ h3{
     margin: 10px 10px 10px 10px;
 }
 
-#img_{
+#up_b{
+    position: relative;
+    /*height: 80px;*/
+   /*background: url("src/picture/camrea2.svg") no-repeat right;*/
+    font-size: 30px;
+    /*margin-left: 90px;*/
+    /*margin-bottom: 0;*/
+    margin-top: 25px;
 
+    /*padding: 7px 50px 1px 0;*/
+    width:75%;
+    height: 65%;
+    border: none;
+
+}
+#upload{
+    width:350px;
+    height:90px;
+    border: 1px solid black;
+}
+#ro{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100%;
+    cursor: pointer;
 }
