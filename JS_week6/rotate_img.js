@@ -1,3 +1,4 @@
+//上传图片的选转实现
 var rotateVal=0;
 var InterVal;
 window.onload=function(){
@@ -8,6 +9,7 @@ window.onload=function(){
     document.getElementById("ro").onmouseup=function(){
         rotate();
     }
+    // document.getElementById("ro").onmouseclick=document.getElementById("logo_img").click();
 }
 
 function rotate(){

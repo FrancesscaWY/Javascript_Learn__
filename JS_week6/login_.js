@@ -112,7 +112,7 @@ function    selectYmd(){
 }
 
 function changeAgentContent(){
-   document.getElementById("img_").value=document.getElementById("logo_img").value;
+   document.getElementById("img_").value=document.getElementById("logo_img").value;//将上传的图片的内容放在img_中
 }
 
 
