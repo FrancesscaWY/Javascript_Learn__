@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <title>login_table</title>
@@ -17,7 +17,7 @@
     <div class="box" id="login_">
 <!--        <div class="login"></div>-->
         <div id="register" class="login">
-            <form action="login.php" name="L_form">
+            <form action="login.php" name="L_form" id="form_">
                 USER_NAME:<label>
                 <input type="text" name="f_name" required="required">
             </label>
@@ -56,10 +56,29 @@
     </div>
     <div class="box"></div>
     <div class="box"></div>
-    <div class="box"></div>
+    <div class="box" id="submit">
+        <div class="submit"></div>
+        <div class="submit">
+            <div class="left">
+                <button type="submit" class="end" id="submit_"><span>SUBMIT</span></button>
+                <img src="/src/picture/提交.svg" id="submit_img" onclick="submit()"> <!--src="/src/picture/提交.svg"-->
+            </div>
+            <div class="left">
+                <button type="reset" id="reset" class="end"><span>RESET</span></button>
+                <img src="/src/picture/reset.svg" id="reset_img"  onclick="reset()"> <!--src="/src/picture/reset.svg"-->
+            </div>
+
+        </div>
+        <div class="submit"></div>
+        <div class="submit"></div>
+        <div class="submit"></div>
+        <div class="submit"></div>
+
+    </div>
     <div class="box"></div>
 </div>
 <script src="upload_img.js"></script>
 <script src="rotate_img.js"></script>
+<script src="sub_res.js"></script>
 </body>
 </html>
