@@ -27,7 +27,6 @@
 // console.log(selector);
 // var value=RChecked();
 // let value=RChecked();
-
 // for(var i=1900;i<=2024;i++){
 //     document.getElementById("year").innerHTML+="<option value='"+i+"'>"+i+"</option>"
 // }
@@ -67,52 +66,61 @@
 // }
 //
 
-function  ymd(){
-    //shi zhe li mei zhi xing ma?wo zai jian cha yi xia ba
-    let yyy=document.getElementById("year");
-    let mmm=document.getElementById("month");
-    let ddd=document.getElementById("day");
-
-    let date=new Date();
-    let yy=parseInt(date.getFullYear());//get the year
-    initSelect(yyy,1920,yy);
-    initSelect(mmm,1,12);
-    initSelect(ddd,1,31);//init the day
-
-    let n=yyy.length;
-    yyy.selectedIndex=Math.round(n/2);
-}
-
-function initSelect(obj,start,end){
-    for(let i=start;i<=end;i++){
+function initSelect(obj, start, end) {
+    console.log("Triggered initSelect")
+    for (let i = start; i <= end; i++) {
         console.log("test")
-        obj.options.add(new Option(i,i));
+        obj.options.add(new Option(i, i));
     }
 }
+function ymd() {
+    console.log("Triggered ymd")
+    //shi zhe li mei zhi xing ma?wo zai jian cha yi xia ba
+    let yyy = document.getElementById("year");
+    let mmm = document.getElementById("month");
+    let ddd = document.getElementById("day");
 
-function    selectYmd(){
-    let yyy=document.getElementById("year");
-    let mmm=document.getElementById("month");
-    let ddd=document.getElementById("day");
-    let m=parseInt(mmm.value);
+    let date = new Date();
+    let yy = parseInt(date.getFullYear());//get the year
+    initSelect(yyy, 1920, yy);
+    initSelect(mmm, 1, 12);
+    initSelect(ddd, 1, 31);//init the day
+
+    let n = yyy.length;
+    yyy.selectedIndex = Math.round(n / 2);
+}
+
+
+function selectYmd() {
+    let yyy = document.getElementById("year");
+    let mmm = document.getElementById("month");
+    let ddd = document.getElementById("day");
+    let m = parseInt(mmm.value);
     var dayEnd;
-    if(m===4||m===6||m===9||m===11){
-        dayEnd=30;
-    }else if(m===2){
-        dayEnd=28;
-        y=parseInt(yyy.value);
-        if(((y%4===0)&&(y%100!==0))||(y%400===0)){
-            dayEnd=29;
+    if (m === 4 || m === 6 || m === 9 || m === 11) {
+        dayEnd = 30;
+    } else if (m === 2) {
+        dayEnd = 28;
+        y = parseInt(yyy.value);
+        if (((y % 4 === 0) && (y % 100 !== 0)) || (y % 400 === 0)) {
+            dayEnd = 29;
         }
-    }else {
-        dayEnd=31;
+    } else {
+        dayEnd = 31;
     }
-    ddd.options.length=0;//clear the day
-    initSelect(ddd,1,dayEnd);
+    ddd.options.length = 0;//clear the day
+    initSelect(ddd, 1, dayEnd);
 }
 
-function changeAgentContent(){
-   document.getElementById("img_").value=document.getElementById("logo_img").value;//将上传的图片的内容放在img_中
+function changeAgentContent() {
+    document.getElementById("img_").value = document.getElementById("logo_img").value;//将上传的图片的内容放在img_中
 }
 
+// document.getElementById("mylove").innerText = 'forever'
+document.getElementById("reset").onmouseover= function () {
+    document.getElementById("reset").style.color="pink";
+}
 
+document.getElementById("reset").onmouseleave= function () {
+    document.getElementById("reset").style.color="white";
+}

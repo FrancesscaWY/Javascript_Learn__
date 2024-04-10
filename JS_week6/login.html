@@ -1,57 +1,76 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh_CN">
 <head>
     <meta charset="UTF-8">
     <title>login_table</title>
     <link rel="stylesheet" href="login.css">
-    <script src="login_.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js "></script>
 </head>
-
-<body onload="ymd()">
+<script>
+    window.addEventListener('load',function () {
+        ymd();
+    })
+</script>
+<body>
 <div id="main">
     <div class="box"></div>
     <div class="box"><h1>HELLO WELCOME TO REGISTER !</h1></div>
     <div class="box"></div>
     <div class="box"></div>
+
+
+
     <div class="box" id="login_">
 <!--        <div class="login"></div>-->
         <div id="register" class="login">
-            <form action="login.php" name="L_form" id="form_">
+            <form action="#" name="L_form" id="form_" onsubmit="return validate();">
+
+
                 USER_NAME:<label>
-                <input type="text" name="f_name" required="required">
+                <input type="text" name="f_name" required="required" class="form">
             </label>
+
                 GENDER:<label>
                 <input type="radio" name="gender" class="age" value="female"><span>FEMALE</span>
-                <input type="radio" name="gender" class="age" value="male"><span>MALE</span>
+                <input type="radio"  name="gender" class="age" value="male"><span>MALE</span>
             </label>
                 <br>
+
                 AGE:<label>
                 <select id="year" name="yyy" onchange="selectYmd()" size="1"> </select><span>YEAR</span>
                 <select id="month" name="mmm" onchange="selectYmd()" size="1"></select><span>MONTH</span>
                 <select id="day" name="ddd" size="1"></select><span>DAY</span>
             </label>
                 <br>
+
                 E_MAIL:<label>
-                <input type="email" name="f_email" required="required">
+                <input type="email" name="f_email" required="required" class="form">
             </label>
                 <br>
+
                 PASSWORD:<label>
-                <input type="password" name="f_password" required="required">
+                <input type="password" name="f_password" required="required" class="form">
             </label>
             </form>
         </div>
+
+
         <div class="login">
 <!--            <form action="login.php" name="L_form">-->
                 <h3>Profile_Picture</h3>
+
                 <img class="user_avatar" src="src/picture/PROFILE_PICTURE_L.svg" id="img_">
                 <input type="file" name="f_picture" accept="image/*" id="logo_img" class="logo_img_add" value="upload" style="display: none" onchange="changeAgentContent()"/>
+
+
             <table id="upload">
                <tr> <td><input type="button" id="up_b" onclick="document.getElementById('logo_img').click()" value="UPLOAD"/></td>
 <!--                <input type="submit" value="UPLOAD">-->
 <!--            </form>-->
                 <td><img src="/src/picture/camrea2.svg" id="ro" onclick="document.getElementById('logo_img').click()"></td></tr>
             </table>
+
+
         </div>
     </div>
     <div class="box"></div>
@@ -80,5 +99,7 @@
 <script src="upload_img.js"></script>
 <script src="rotate_img.js"></script>
 <script src="sub_res.js"></script>
+<script src="login_.js"></script>
+<script src="CSS_active.js"></script>
 </body>
 </html>

@@ -26,7 +26,6 @@ body {
     height: 100%;
     border: darkslategray 1px solid;
 }
-
 h1 {
     font-size: 70px;
     font-family: "Cantarell", cursive, sans-serif;
@@ -47,8 +46,8 @@ h1 {
 }
 
 form {
-    font-family: "Cantarell", cursive, sans-serif;
-    font-size: 45px;
+    font-family:"myFont2", sans-serif;
+    font-size: 35px;
     margin: 50px 20px 20px 20px;
 }
 
@@ -56,7 +55,16 @@ input {
     font-size: 40px;
     margin: 20px 20px 20px 20px;
     width: 53%;
-    height: 55px;
+    height: 40px;
+    outline: none;
+    /*background-image: url("/src/picture/gougou.svg");*/
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    caret-color: steelblue;
+    /*caret-shape: underscore;*/
+    /*caret: #a59cfc 1px solid;*/
+    /*caret:  1px wave;*/
 }
 
 .age {
@@ -97,6 +105,17 @@ h3 {
     text-align: center;
 }
 
+.form{
+    height: 50px;
+    font-size: 25px;
+    font-family: "myFont2", sans-serif;
+    text-align: center;
+    /*background-image: url("/src/picture/liner.svg");*/
+    background-size: contain;
+    border:none;
+    border-bottom: #af9289 4px solid;
+    /*background-image: url("/src/picture/gougou.svg");*/
+}
 #logo_img {
     width: 200px;
     height: 100px;
@@ -268,4 +287,14 @@ h3 {
     100% {
         transform: translateY(10px);
     }
+}
+
+a:link,a:visited{
+    color: #FFFFFF;
+    font-family: "myFont2" , sans-serif;
+}
+
+a:active,a:hover{
+    color: pink ;
+    font-family: "myFont2" , sans-serif;
 }
