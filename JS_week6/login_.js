@@ -122,5 +122,13 @@ document.getElementById("reset").onmouseover= function () {
 }
 
 document.getElementById("reset").onmouseleave= function () {
-    document.getElementById("reset").style.color="white";
+    document.getElementById("reset").style.color="black";
+}
+
+document.getElementById("submit_").onmouseover=function(){
+    document.getElementById("submit_").style.color="pink";
+}
+
+document.getElementById("submit_").onmouseleave=function(){
+    document.getElementById("submit_").style.color="black";
 }
