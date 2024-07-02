@@ -1,0 +1,18 @@
+{
+  "name": "newsdemo1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "algoliasearch": "^4.24.0",
+    "ant-design-vue": "^4.2.3",
+    "instantsearch.css": "^8.2.1",
+    "vue-instantsearch": "^4.17.5"
+  }
+}
